@@ -1,0 +1,95 @@
+* {
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.padre {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.header {
+    background:#000;
+    display: flex;
+    flex-flow: column nowrap;
+}
+   .menu {
+    background:#293461;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100px;
+    align-items: center;
+   }
+      .logo {
+        background:#f24c4c;
+        flex-grow: 1;
+    }
+      .nav {
+        background:#f24c4c;
+        flex-grow: 5;
+    }
+      .social {
+        background:#f24c4c;
+        flex-grow: 1;
+      }
+    .texto-principal {
+    background:#EC9B3B;
+    }
+      h1 {
+        background:#F7D716;
+      }
+.section {
+    background:#000;
+    display: flex;
+}
+   .articulos {
+    background: #06283f;;
+    flex: 2 1 auto;
+    display: flex;
+    flex-flow: row wrap;
+   }
+      .article {
+        background:#1363DF;
+        flex: 1 1 40%;
+      }
+      .navegacion {
+        background:#47b5ff;
+        flex: 1 1 100%;
+      }
+    .aside {
+        background:#EB5353;
+        flex: 1 1 auto;
+   }  
+      .publicidad {
+        background:#F9D923;
+      }
+.footer {
+    background:#000;
+    display: flex;
+    justify-content: center;
+}
+    .pie{
+        background: #F8B400;
+        width: 100%;
+    }
+@media all and (max-width: 600px) {
+      .section {
+        flex-direction: column;
+      }
+      .aside {
+        flex-direction: column;
+      }
+    }
+@media all and (max-width: 400px) {
+      .menu {
+        flex-direction: column;
+        display: flex;
+        align-items: stretch;
+        height: auto;
+      }
+      .articulos {
+        flex-direction: column;
+      } 
+      .aside {
+        flex-direction: column;
+      }
+    }
